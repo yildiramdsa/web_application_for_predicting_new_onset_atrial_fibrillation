@@ -1,5 +1,3 @@
-![Web Application for Predicting New-Onset Atrial Fibrillation Using Routinely Reported 12-Lead ECG Variables and Electronic Health Data](https://github.com/yildiramdsa/web_application_for_predicting_new_onset_atrial_fibrillation/blob/main/title_sm.png)
-
 # Web Application for Predicting New-Onset Atrial Fibrillation Using Routinely Reported 12-Lead ECG Variables and Electronic Health Data
 
 ## Overview
@@ -34,4 +32,4 @@ Atrial fibrillation is a common, high-risk condition that greatly increases stro
 **streamlit_app.py**: Streamlit version (S3 saving disabled).  
 **synthetic_data.csv**: Synthetic data for dashboard visualizations.  
 
-![Web Application for Predicting New-Onset Atrial Fibrillation Using Routinely Reported 12-Lead ECG Variables and Electronic Health Data](https://github.com/yildiramdsa/web_application_for_predicting_new_onset_atrial_fibrillation/blob/main/title_sm.png) **Live Application:** https://predicting-new-onset-af.streamlit.app/
+![Web Application for Predicting New-Onset Atrial Fibrillation Using Routinely Reported 12-Lead ECG Variables and Electronic Health Data](https://github.com/yildiramdsa/web_application_for_predicting_new_onset_atrial_fibrillation/blob/main/title_sm.png) https://predicting-new-onset-af.streamlit.app/ (live application)
