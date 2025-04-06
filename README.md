@@ -1,5 +1,7 @@
 # Web Application for Predicting New-Onset Atrial Fibrillation Using Routinely Reported 12-Lead ECG Variables and Electronic Health Data
 
+![Web Application for Predicting New-Onset Atrial Fibrillation Using Routinely Reported 12-Lead ECG Variables and Electronic Health Data](https://github.com/yildiramdsa/web_application_for_predicting_new_onset_atrial_fibrillation/blob/main/title_sm.png) https://predicting-new-onset-af.streamlit.app/
+
 ## Overview
 
 This project delivers an interactive web application that uses routinely reported 12-lead ECG data and electronic health records to predict a patient's risk for new-onset atrial fibrillation (AF). Clinicians can enter patient data through an intuitive form and view personalized risk predictions and visual comparisons on a dashboard.
@@ -30,6 +32,4 @@ Atrial fibrillation is a common, high-risk condition that greatly increases stro
 **model_training.py**: Pipeline and model training script.  
 **requirements.txt**: Lists dependencies for the Streamlit app.  
 **streamlit_app.py**: Streamlit version (S3 saving disabled).  
-**synthetic_data.csv**: Synthetic data for dashboard visualizations.  
-
-![Web Application for Predicting New-Onset Atrial Fibrillation Using Routinely Reported 12-Lead ECG Variables and Electronic Health Data](https://github.com/yildiramdsa/web_application_for_predicting_new_onset_atrial_fibrillation/blob/main/title_sm.png) https://predicting-new-onset-af.streamlit.app/
+**synthetic_data.csv**: Synthetic data for dashboard visualizations.
