@@ -1,4 +1,4 @@
-![Web Application for Predicting New-Onset Atrial Fibrillation Using Routinely Reported 12-Lead ECG Variables and Electronic Health Data](https://github.com/yildiramdsa/web_application_for_predicting_new_onset_atrial_fibrillation/blob/main/title.png)
+![Web Application for Predicting New-Onset Atrial Fibrillation Using Routinely Reported 12-Lead ECG Variables and Electronic Health Data](https://github.com/yildiramdsa/web_application_for_predicting_new_onset_atrial_fibrillation/blob/main/title_sm.png)
 
 # Web Application for Predicting New-Onset Atrial Fibrillation Using Routinely Reported 12-Lead ECG Variables and Electronic Health Data
 
