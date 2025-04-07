@@ -301,7 +301,7 @@ def render_form():
         form_values["aortic_dissection_icd10_prior"] = 1 if c1.checkbox("Aortic dissection") else 0
         st.divider()
 
-        st.subheader("History of Non-Cardiovascular diseases")
+        st.subheader("History of Non-Cardiovascular Diseases")
         st.caption("Observations recorded at any time prior to or within 6 months after the index ECG.")
         c4, c5, c6 = st.columns(3)
         form_values["pulmonary_htn_icd10"] = 1 if c4.checkbox("Pulmonary hypertension") else 0
