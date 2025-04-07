@@ -363,7 +363,7 @@ def render_form():
         form_values["ecg_resting_intraventricular_conduction_delay"] = 1 if c12.checkbox("Intraventricular Conduction Delay") else 0
         
         st.subheader("Laboratory Results")
-        st.caption("Measurements taken within 3 years prior to or 1 year after the index 12-lead ECG.")
+        st.caption("Measurements taken within 1 year prior to or within 6 months after the index ECG.")
         lab_c1, lab_c2, lab_c3 = st.columns(3)
         lab_hgb = lab_c1.text_input("Enter the Hemoglobin", key=unique_key("hgb_peri"))
         lab_hct = lab_c2.text_input("Enter the Hematocrit", key=unique_key("hct_peri"))
