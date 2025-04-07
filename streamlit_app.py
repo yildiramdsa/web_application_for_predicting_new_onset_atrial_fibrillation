@@ -265,7 +265,7 @@ img_c1, img_c2, img_c3 = st.columns(3)
 with img_c2:
     st.image("title.png", width=300)
 st.title("Risk Prediction for Atrial Fibrillation")
-st.write("All fields marked with ⚠️ are required. Please fill them out before submitting.")
+st.caption("All fields marked with ⚠️ are required. Please fill them out before submitting.")
 
 if "form_key" not in st.session_state:
     st.session_state["form_key"] = str(uuid.uuid4())
@@ -291,7 +291,7 @@ def render_form():
         st.divider()
 
         st.subheader("History of Cardiovascular diseases:")
-        st.write("Select all that apply: Observations recorded at any time prior to or within 6 months after the index ECG.")
+        st.caption("Select all that apply: Observations recorded at any time prior to or within 6 months after the index ECG.")
         c1, c2, c3 = st.columns(3)
         form_values["dcm_icd10"] = 1 if c1.checkbox("Dilated cardiomyopathy") else 0
         form_values["hcm_icd10"] = 1 if c2.checkbox("Hypertrophic cardiomyopathy") else 0
@@ -302,7 +302,7 @@ def render_form():
         st.divider()
 
         st.subheader("History of Non - Cardiovascular diseases:")
-        st.write("Select all that apply: Observations recorded at any time prior to or within 6 months after the index ECG.")
+        st.caption("Select all that apply: Observations recorded at any time prior to or within 6 months after the index ECG.")
         c4, c5, c6 = st.columns(3)
         form_values["pulmonary_htn_icd10"] = 1 if c4.checkbox("Pulmonary hypertension") else 0
         form_values["amyloid_icd10"] = 1 if c4.checkbox("Amyloidosis") else 0
@@ -317,7 +317,7 @@ def render_form():
         st.divider()
 
         st.subheader("Prior Cardiovascular events and procedures")
-        st.write("Select all that apply: Observations recorded at any time prior to the index ECG.")
+        st.caption("Select all that apply: Observations recorded at any time prior to the index ECG.")
         c7, c8, c9 = st.columns(3)
         form_values["event_cv_hf_admission_icd10_prior"] = 1 if c7.checkbox("Heart failure admission") else 0
         form_values["event_cv_cad_acs_acute_mi_icd10_prior"] = 1 if c7.checkbox("Acute myocardial infarction") else 0
@@ -335,7 +335,7 @@ def render_form():
         st.divider()
 
         st.subheader("Cardiovascular Devices")
-        st.write("Select all that apply: Observations recorded at any time prior to the index ECG.")
+        st.caption("Select all that apply: Observations recorded at any time prior to the index ECG.")
         form_values["pacemaker_permanent_cci_prior"] = 1 if st.checkbox("Prior permanent pacemaker implantation") else 0
         form_values["crt_cci_prior"] = 1 if st.checkbox("Prior cardiac resynchronization therapy (CRT) implantation") else 0
         form_values["icd_cci_prior"] = 1 if st.checkbox("Prior internal cardioverter defibrillator (ICD) implantation") else 0
@@ -363,7 +363,7 @@ def render_form():
         form_values["ecg_resting_intraventricular_conduction_delay"] = 1 if c12.checkbox("Intraventricular Conduction Delay") else 0
         
         st.subheader("Laboratory Results")
-        st.write("Enter all that apply: Measurements taken within 3 years prior to or 1 year after the index 12-lead ECG.")
+        st.caption("Enter all that apply: Measurements taken within 3 years prior to or 1 year after the index 12-lead ECG.")
         lab_c1, lab_c2, lab_c3 = st.columns(3)
         lab_hgb = lab_c1.text_input("Enter the Hemoglobin", key=unique_key("hgb_peri"))
         lab_hct = lab_c2.text_input("Enter the Hematocrit", key=unique_key("hct_peri"))
@@ -392,7 +392,7 @@ def render_form():
         lab_troponin = lab_c1.text_input("Enter Highest Troponin", key=unique_key("troponin_t_hs_peri_highest"))
         lab_ntprobnp = lab_c2.text_input("Enter Highest NT-proBNP", key=unique_key("NTproBNP_peri_highest"))
         
-        st.write("Enter all that apply: Measurements taken within 3 years prior to or 1 year after the index 12-lead ECG.")
+        st.caption("Enter all that apply: Measurements taken within 3 years prior to or 1 year after the index 12-lead ECG.")
         lab_c4, lab_c5, lab_c6 = st.columns(3)
         lab_glucose_fasting = lab_c4.text_input("Enter Highest Fasting Glucose", key=unique_key("glucose_fasting_peri_highest"))
         lab_glucose_random = lab_c5.text_input("Enter Highest Random Glucose", key=unique_key("glucose_random_peri_highest"))
@@ -447,7 +447,7 @@ def render_form():
         st.divider()
 
         st.subheader("Medications")
-        st.write("Select all that apply: Usage recorded within 90 days before or after the index 12-lead ECG.")  
+        st.caption("Select all that apply: Usage recorded within 90 days before or after the index 12-lead ECG.")  
         c15, c16, c17 = st.columns(3)
         form_values["anti_platelet_oral_non_asa_any_peri"] = 1 if c15.checkbox("Non-Aspirin anti-platelet") else 0
         form_values["anti_coagulant_oral_any_peri"] = 1 if c15.checkbox("Oral Anticoagulants") else 0
